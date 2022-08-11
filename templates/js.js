@@ -18,4 +18,4 @@ input, filter, table, tr, td, i, txtValue;
     }
   }
 }
-</script>
+</script> 
