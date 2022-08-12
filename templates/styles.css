@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(238, 247, 122);
+    background-color: rgb(238, 247, 122, 0.5);
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .layout-container {
@@ -64,8 +67,8 @@ th {
     margin-bottom: 25px;
 }
 
-button {
-    margin-top: 15px;
+#driver-button, #manager-button {
+    margin: 15px auto 0px;
     border: none;
     border-radius: 10%;
     padding: 5px 10px;
@@ -73,7 +76,9 @@ button {
     color: #fff;
 }
 
-button:hover {
+
+#driver-button:hover,
+#manager-buton:hover {
     background-color: rgb(8, 145, 42);
     color: #000;
 }
