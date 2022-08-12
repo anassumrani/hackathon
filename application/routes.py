@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import request, redirect,url_for, render_template 
 from application import app, db
 from application.models import *
@@ -27,3 +28,6 @@ def add_driver():
 def Home():
     return render_template('index.html')
      
+=======
+from application.models import *
+>>>>>>> a6d2810612fbaf1d452dd82fe76299bcde8c3919
