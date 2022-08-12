@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(203, 247, 146);
+    background-color: rgb(238, 247, 122, 0.5);
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .layout-container {
@@ -33,15 +36,18 @@ body {
     text-decoration: none;
 }
 
-li {
+li, h1 {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 hr {
     margin-bottom: 0;
 }
-
-
 
 table {
     margin: 0;
@@ -61,8 +67,8 @@ th {
     margin-bottom: 25px;
 }
 
-button {
-    margin-top: 15px;
+#driver-button, #manager-button {
+    margin: 15px auto 0px;
     border: none;
     border-radius: 10%;
     padding: 5px 10px;
@@ -70,7 +76,9 @@ button {
     color: #fff;
 }
 
-button:hover {
+
+#driver-button:hover,
+#manager-buton:hover {
     background-color: rgb(8, 145, 42);
     color: #000;
 }
@@ -81,7 +89,8 @@ button:hover {
 }
 
 input {
-    border: 0px solid #fff;
-    /* border-radius: 25%; */
-    background-color: rgb(203, 247, 146);
+    border: 2px solid #000;
+    padding: 10px 25px;
+    border-radius: 5%; 
+    background-color: rgb(212, 212, 212);
 }

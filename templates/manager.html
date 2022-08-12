@@ -9,27 +9,34 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">QOMMON LOGISTICS</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./manager.html">Managers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./driver.html">Drivers</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">QOMMON LOGISTICS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./manager.html">Manager</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Drivers
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./ray.html">Ray</a></li>
+                <li><a class="dropdown-item" href="./paul.html">Paul</a></li>
+                <li><a class="dropdown-item" href="./steve.html">Steve</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <div class="layout-container">
         <h1 class="page-titles">Managers System</h1>
@@ -40,6 +47,7 @@
                 <th>Customer Forename</th>
                 <th>Customer Surname</th>
                 <th>Customer Address</th>
+                <th>Customer Email</th>
                 <th>Number of Packages</th>
                 <th>Driver</th>
             </tr>
@@ -48,10 +56,11 @@
                 <td>Tim</td>
                 <td>Hughes</td>
                 <td>123 Meade Ave</td>
+                <td>th@email.com</td>
                 <td>5</td>
                 <td><select name="driver" value="submit">
-                    <option value="d1">Roy</option>
-                    <option value="d2">Cliff</option>
+                    <option value="d1">Ray</option>
+                    <option value="d2">Steve</option>
                     <option value="d3">Paul</option>
                 </select></td>
             </tr>
@@ -60,10 +69,11 @@
                 <td>Sarah</td>
                 <td>Rush</td>
                 <td>3 Withy Ave</td>
+                <td>sr@email.com</td>
                 <td>1</td>
                 <td><select name="driver" value="submit">
-                    <option value="d1">Roy</option>
-                    <option value="d2">Cliff</option>
+                    <option value="d1">Ray</option>
+                    <option value="d2">Steve</option>
                     <option value="d3">Paul</option>
                 </select></td>
             </tr>
@@ -72,16 +82,108 @@
                 <td>Claire</td>
                 <td>Beaven</td>
                 <td>44 Station Rd</td>
+                <td>cb@email.com</td>
                 <td>2</td>
                 <td><select name="driver" value="submit" id="myInput">
-                    <option value="d1">Roy</option>
-                    <option value="d2">Cliff</option>
+                    <option value="d1">Ray</option>
+                    <option value="d2">Steve</option>
                     <option value="d3">Paul</option>
                 </select></td>
             </tr>
+            <tr>
+              <td>4</td>
+              <td>Sue</td>
+              <td>Preston</td>
+              <td>49 Real Rd</td>
+              <td>sp@email.com</td>
+              <td>2</td>
+              <td><select name="driver" value="submit" id="myInput">
+                  <option value="d1">Ray</option>
+                  <option value="d2">Steve</option>
+                  <option value="d3">Paul</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>David</td>
+            <td>Page</td>
+            <td>9 Smith Rd</td>
+            <td>dp@email.com</td>
+            <td>1</td>
+            <td><select name="driver" value="submit" id="myInput">
+                <option value="d1">Ray</option>
+                <option value="d2">Steve</option>
+                <option value="d3">Paul</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Harry</td>
+          <td>Prince</td>
+          <td>1 Town Rd</td>
+          <td>hp@email.com</td>
+          <td>7</td>
+          <td><select name="driver" value="submit" id="myInput">
+              <option value="d1">Ray</option>
+              <option value="d2">Steve</option>
+              <option value="d3">Paul</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Ben</td>
+        <td>Meade</td>
+        <td>1 Sterling Street</td>
+        <td>bm@email.com</td>
+        <td>3</td>
+        <td><select name="driver" value="submit" id="myInput">
+            <option value="d1">Ray</option>
+            <option value="d2">Steve</option>
+            <option value="d3">Paul</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Lisa</td>
+        <td>Povey</td>
+        <td>12 Growen Rd</td>
+        <td>psp@email.com</td>
+        <td>2</td>
+        <td><select name="driver" value="submit" id="myInput">
+            <option value="d1">Ray</option>
+            <option value="d2">Steve</option>
+            <option value="d3">Paul</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Chris</td>
+        <td>Pratt</td>
+        <td>12 More Place</td>
+        <td>cpp@email.com</td>
+        <td>9</td>
+        <td><select name="driver" value="submit" id="myInput">
+            <option value="d1">Ray</option>
+            <option value="d2">Steve</option>
+            <option value="d3">Paul</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Lance</td>
+        <td>Strong</td>
+        <td>12 Wild Ave</td>
+        <td>ls@email.com</td>
+        <td>4</td>
+        <td><select name="driver" value="submit" id="myInput">
+            <option value="d1">Ray</option>
+            <option value="d2">Steve</option>
+            <option value="d3">Paul</option>
+        </select></td>
+      </tr>
         </table>
         <button>Submit</button>
       </div>
-	<script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<script>
+/* <script>
 function route() {
 input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
@@ -18,4 +18,4 @@ input, filter, table, tr, td, i, txtValue;
     }
   }
 }
-</script> 
+</script>  */
