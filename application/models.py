@@ -1,8 +1,9 @@
-from application import db 
+from application import db
+
 
 class Customers(db.Model):
     customer_id = db.Column(db.Integer, primary_key =True)
-    customer_name = db.Column(db.String(20), nullabe = False)
+    customer_name = db.Column(db.String(20), nullable = False)
     customer_address = db.Column(db.String(50), nullable = False)
     customer_email = db.Column(db.String(30), nullable = False)
     CustPackage= db.relationship('Packages',backref='Customers')
