@@ -5,7 +5,7 @@ class Customers(db.Model):
     customer_name = db.Column(db.String(20), nullabe = False)
     customer_address = db.Column(db.String(50), nullable = False)
     customer_email = db.Column(db.String(30), nullable = False)
-    CustPackage= db.relationship('Packages',backref='Customers')
+    driver = db.Column(db.I)
     def __str__(self):
         return f"{self.customer_name},{self.customer_address},{self.customer_email}"
 
@@ -13,7 +13,6 @@ class Customers(db.Model):
 class Drivers(db.Model):
     driver_id = db.Column(db.Integer, primary_key =True)
     driver_name = db.Column(db.String(20), nullable = False)
-    driver_email = db.Column (db.String(20), nullable = False)
     Driver_package=db.relationship('Packages', backref='Drivers')
 
 class Packages(db.Model): 

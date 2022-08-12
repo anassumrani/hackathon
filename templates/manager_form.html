@@ -1,0 +1,12 @@
+{%extends 'manager.html'%}
+{% block body %}
+<div class = 'Form'>
+    <form method="POST" action="">
+        {{form.hidden_tag()}}
+        {{form.Customer.label}} {{form.Customer}}<br>
+        {{form.driver.label}}  {{form.driver}}<br>
+        <br>
+        {{form.submit}}
+    </form>
+</div>
+{% endblock body %}
